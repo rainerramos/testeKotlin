@@ -7,16 +7,18 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    /*no linear layout acima ele não possui texto. Portanto não tem como colocar um
-    textColor nele. Sua função é juntar os elementos
-    tais como o TextView abaixo*/
-
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="#419EE8"
-        android:textColor="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+
         android:text="TESTE" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/purple_200"/>
+
 
 
     </LinearLayout>
