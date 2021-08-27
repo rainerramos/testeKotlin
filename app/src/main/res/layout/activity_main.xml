@@ -7,51 +7,38 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textTeste"
+        android:layout_margin="32dp"
+        android:layout_alignParentTop="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:text="TESTE" />
 
     <TextView
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/textTeste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:text="TESTE" />
-
+        android:text="ABC" />
 
     <TextView
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/textTeste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:text="TESTE" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:text="TESTE" />
+        android:text="ABC22" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="ALINHAMENTO CENTRAL" />
+    /*A diferença de LinearLayout e RelativeLayout é: o RelativeLayout tenta eliminar a hierarquia
+    fazendo um layout mais simples e dar mais flexibilidade
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:text="A" />
+    No LinearLayout tem a orientação vertical ou horizontal mas possui uma hierarquia, deixando
+    assim o código um pouco maior. Os dois são corretos */
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
-        android:text="B" />
 
 </RelativeLayout>
+
+
+
+
