@@ -4,37 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#62D9E8"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textTeste"
-        android:layout_margin="32dp"
-        android:layout_alignParentTop="true"
-        android:layout_width="wrap_content"
+        android:id="@+id/textDay"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:text="TESTE" />
-
-    <TextView
-        android:layout_marginLeft="32dp"
-        android:layout_below="@+id/textTeste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ABC" />
-
-    <TextView
         android:layout_marginTop="32dp"
-        android:layout_toEndOf="@+id/textTeste"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Domingo, 28 de Agosto"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textDay"
+        android:background="@color/white" />
+
+    <CheckBox
+        android:id="@+id/check1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ABC22" />
+        android:layout_below="@+id/textDay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:text="Cortar a grama"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:text="Fazer as compras"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
 
-    /*A diferença de LinearLayout e RelativeLayout é: o RelativeLayout tenta eliminar a hierarquia
-    fazendo um layout mais simples e dar mais flexibilidade
-
-    No LinearLayout tem a orientação vertical ou horizontal mas possui uma hierarquia, deixando
-    assim o código um pouco maior. Os dois são corretos */
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Complete todas as tarefas"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>
